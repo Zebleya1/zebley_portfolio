@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Goals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="careerBody">
+  <header>
+    <h1>Career Goals</h1>
+    <nav>
+      <a href="resume.html">Resume</a> |
+      <a href="cover-letter.html">Cover Letter</a> |
+      <a href="career-goals.html">Career Goals</a>
+    </nav>
+  </header>
+
+  <main id="careerMain">
+    <!-- video Behind everything that follows the scroll -->
+    <video id="backgroundVideo" muted autoplay loop playsinline>
+      <source src="video\203449-921267347_small.mp4" type="video/mp4">
+    </video>
+    <section >
+      <img src="images/aaron.jpg"  alt="profile-picture" class="profile-picture"> 
+    </section>
+    <section>
+      <h2>My Aspirations</h2>
+      <p>Committed to continuous learning, passionate about user-centric design, and excited about contributing to a coding team.<br> Actively engaging in ongoing education to stay up to date in industry trends and technologies. Passionately looking for technical openings where I can utilize my 10 years of experience working in medical, along with my software development education, to collaborate with a team.</p>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <!-- add autocorrect function -->
+      <form action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank" class="contact-form">
+        <div class="form-grid">
+          <label>First Name: <input type="text" name="firstName"></label><br>
+          <label>Last Name: <input type="text" name="lastName"></label><br>
+          <label>Company: <input type="text" name="company"></label><br>
+          <label>Email: <input type="email" name="email"></label><br>
+          <label>Phone: <input type="tel" name="phone"></label><br>
+          <div class="form-full">
+            <label>Message: <textarea name="message"></textarea></label>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <p>Best Contact Time:</p>
+              <label><input type="radio" name="time" value="am"> AM</label>
+              <label><input type="radio" name="time" value="pm"> PM</label>
+              <label><input type="radio" name="time" value="any"> Anytime</label>
+            </div>  
+          
+
+            <div class="form-group">
+              <label>Preferred Contact:
+                <select name="contact">
+                  <option>Phone</option>
+                  <option>Email</option>
+                  <option>Text</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </div>
+      
+        <br>
+        <div class="form-submit">
+          <button id="submitButton" type="submit">
+            <strong>Submit</strong>
+          </button>
+        </div>
+      </form>
+      
+      <!-- sound on button press -->
+      <audio>
+        <source src="audio/sample.mp3" type="audio/mp3">
+      </audio>
+
+      <script>
+        const clickSound = new Audio("audio/minimalist-button-hover-sound-effect-399749.mp3");
+        document.getElementById("submitButton").addEventListener("click", function(){
+          clickSound.play();
+        });
+      </script>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aaron Zebley's Portfolio</p>
+  </footer>
+</body>
+</html>

@@ -19,6 +19,10 @@ h1, h2, h3{
     margin-bottom: 10px;
 }
 
+h2, h3{
+    background-color: #F6FCDF;
+}
+
 hr{
     border: 2px solid #1a1a19;
     background-color: #31511E;
@@ -60,7 +64,7 @@ main{
     padding: 20px;
     background: #859F3D;
     border-radius: 6px;
-    box-shadow: 0 0 5 #31511E;
+    box-shadow: 0 0 20px #31511E 
 }
 
 /* Tables */
@@ -78,7 +82,9 @@ th, td{
     padding: 10px;
     text-align: left;
 }
-
+th{
+    background-color: #F6FCDF;
+}
 caption{
     font-weight: bold;
     margin-bottom: 5px;

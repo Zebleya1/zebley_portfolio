@@ -91,9 +91,11 @@ caption{
 }
 
 /* Lists */
-ul, ol{
+ul{
+    list-style-type:square ;
     margin: 10px 0 20px 40px;
 }
+
 
 li{
     margin-bottom: 5px;
